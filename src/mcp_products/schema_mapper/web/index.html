@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Review vendor CSV mappings and reuse a Python transform · Schema Mapper</title><meta name="description" content="Turn a vendor CSV into a reviewed mapping and reusable Python transform. Preview and validate free; download your approved artifact for $9.">
+<link rel="canonical" href="https://schema.contentsweep.ai/">
+<meta property="og:type" content="website"><meta property="og:url" content="https://schema.contentsweep.ai/">
+<meta property="og:title" content="Turn a vendor CSV into a reviewed mapping"><meta property="og:description" content="Preview and validate free. Download your approved artifact for $9, then reuse it for free.">
+<meta property="og:image" content="https://schema.contentsweep.ai/assets/schema-mapper-social.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/style.css"><script defer src="/app.js"></script></head>
+<body>
+<header><a class="brand" href="/">Content Sweep <span>/ Schema Mapper</span></a><a href="/guides">Guides &amp; examples</a></header>
+<main>
+<section class="intro"><p class="eyebrow">FROM VENDOR FILE TO YOUR APPLICATION</p><h1>Your vendor's CSV.<br>Your application's contract.</h1><p class="lede">Turn a vendor export into a reviewed mapping and reusable Python transform. Preview and validate free; download your approved artifact for $9.</p><div class="hero-actions"><button id="demo">Try the free example →</button><a href="/sample">See the sample ZIP</a></div><div class="offer"><strong>$9 once</strong><span>per approved artifact · no subscription · free reuse</span></div><p class="micro">Flat CSV / JSON / JSONL · 1 MiB hosted limit · Python 3.12+ and the free matching runtime required</p></section>
+<section class="workspace">
+<div class="section-title"><span class="step">01</span><div><h2>Preview your import</h2><p>Review correspondences, preserve text identifiers and validate exact decimals. You decide what the fields mean.</p></div></div>
+<form id="preview-form">
+<div class="grid"><label>Vendor label<input id="vendor" required maxlength="128" placeholder="e.g. Northwind export"></label><label>Application domain<input id="domain" required maxlength="128" placeholder="e.g. customer onboarding"></label></div>
+<div class="grid"><label class="upload">Source file<input id="source" type="file" accept=".csv,.json,.jsonl,.ndjson"><span>Flat records. UTF-8. No dates, nested values or locale conversion.</span></label><label>Target contract<textarea id="target" rows="9" required spellcheck="false" placeholder='{"type":"object","properties":{"id":{"type":"string"}},"required":["id"]}'></textarea></label></div>
+<label class="consent"><input type="checkbox" id="privacy-consent" required> I have permission to process this file. It will be uploaded for server processing and scheduled for deletion after one hour. No data is sent to an AI model.</label>
+<button type="submit" id="preview-button">Preview field choices <span>→</span></button>
+</form></section>
+<section class="workspace hidden" id="review-panel">
+<div class="section-title"><span class="step">02</span><div><h2>Review every correspondence</h2><p>Scores rank candidates; they are not probabilities. Verify meaning and casts.</p></div></div>
+<p id="coverage" class="notice"></p><div class="table-wrap"><table><thead><tr><th>Target / contract</th><th>Source choice</th><th>Evidence</th></tr></thead><tbody id="fields"></tbody></table></div>
+<form id="approve-form"><label>Reviewer name<input id="reviewer" required maxlength="128" placeholder="Your name"></label><label class="consent"><input id="approve-consent" type="checkbox" required> I reviewed every choice, null policy and cast, and approve these decisions for this vendor and domain.</label><button type="submit">Validate all records <span>→</span></button></form>
+</section>
+<section class="workspace hidden" id="purchase-panel">
+<div class="section-title"><span class="step">03</span><div><h2 id="purchase-title">Your artifact is ready</h2><p id="order-status"></p></div></div>
+<div class="artifact-list"><span>✓ Versioned approved mapping</span><span>✓ Matching Python runtime wrapper</span><span>✓ Full-record validation receipt</span></div>
+<p class="micro">Python 3.12+ and the free matching Schema Mapper runtime are required. The artifact contains schemas and decisions; it does not include your source records. Downloads remain available in this browser session for up to seven days after purchase. Save your ZIP immediately.</p>
+<button id="pay">Pay $9 and download</button><button class="secondary hidden" id="refresh-payment">Check payment</button><a class="button hidden" id="download">Download approved artifact ↓</a>
+<p class="micro">Payment is one-time through Stripe. No recurring charge. Unsupported data or failed validation cannot enter checkout. A refund revokes future downloads; an already downloaded file cannot be recalled.</p>
+</section>
+<p id="status" role="status" aria-live="polite"></p>
+<section class="workspace" id="demo-video"><div class="section-title"><div><h2>Watch the workflow in 75 seconds</h2><p>A synthetic file, an explicit review and a look inside the artifact. This demonstration makes no purchase.</p></div></div><video controls preload="none" poster="/assets/schema-mapper-social.png" aria-label="Schema Mapper workflow demonstration"><source src="/assets/schema-mapper-demo.webm" type="video/webm"><track kind="captions" src="/assets/schema-mapper-demo.vtt" srclang="en" label="English" default>Your browser cannot play this video. <a href="/sample">View the sample artifact</a>.</video><p class="micro">No audio is needed. Captions explain each step. <a href="/assets/schema-mapper-demo.vtt">Read the caption transcript</a>.</p></section>
+<section class="details"><div><h3>Small, explicit support contract</h3><p>Primitive fields, renames and allowlisted casts. Required fields, nullability, enums and inclusive numeric bounds. Unsupported keywords are refused. Leading-zero identifiers stay strings.</p></div><div><h3>Review stays with you</h3><p>This deterministic tool cannot establish business meaning. Names and types can stay the same when meaning changes. Recheck with your vendor before reusing a mapping.</p></div><div><h3>Free local engine</h3><p>The Apache-2.0 CLI and SDK are free. This hosted offer packages your reviewed, validated artifact without setting up a local environment. Raw uploads expire in one hour; mapping/artifact copies expire after the download window. Financial order identities are retained separately.</p></div></section>
+<section id="support-panel" class="workspace hidden"><h2>Support or refund request</h2><p>Use the browser that created your order. Requests are saved for merchant review; keep the request identifier.</p><form id="support-form"><label>Contact email<input id="support-email" type="email" required maxlength="254"></label><label>Message<textarea id="support-message" required maxlength="2000" rows="3"></textarea></label><button type="submit">Save support request</button></form></section>
+<section class="workspace"><h2>Working examples, with the limits explained</h2><ul><li><a href="/guides/vendor-csv-to-app-contract">Map a vendor CSV to your application's contract</a></li><li><a href="/guides/preserve-identifiers-and-decimals">Preserve leading-zero IDs and exact decimals</a></li><li><a href="/guides/reuse-approved-mappings-and-drift">Reuse an approved mapping and detect structural drift</a></li></ul></section>
+<footer><span>Content Sweep LLC · Schema Mapper beta</span><a href="/runtime/download">Free local runtime</a><a href="/privacy">Privacy</a><button id="support-button" class="secondary">Support / refund request</button><a href="mailto:founder@contentsweep.ai">Merchant contact</a></footer>
+</main></body></html>

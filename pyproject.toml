@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools==80.9.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contentsweep-schema-mapper"
+version = "2.0.0b2"
+description = "Local explainable flat schema proposals and review-bound transformation artifacts"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+readme = "README.md"
+dependencies = []
+
+[project.optional-dependencies]
+mcp = ["mcp>=2.3,<3"]
+service = ["fastapi==0.143.0", "uvicorn==0.54.0", "stripe==16.0.0"]
+
+[project.scripts]
+schema-map = "mcp_products.schema_mapper.cli:main"
+schema-map-mcp = "mcp_products.schema_mapper.mcp:main"
+
+[tool.setuptools]
+packages = ["mcp_products.schema_mapper"]
+package-dir = { "" = "src" }
+
+[tool.setuptools.package-data]
+"mcp_products.schema_mapper" = ["web/*"]
