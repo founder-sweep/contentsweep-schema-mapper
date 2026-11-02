@@ -1,5 +1,13 @@
 # Schema Mapper
 
+<!-- agent-current-status:start -->
+## Current status — November 1, 2026
+
+Current free runtime download: 2.0.0b2, Python 3.12+. Local CLI/SDK/stdio MCP need no hosted key. Optional hosted preview and validation are free; one approved artifact download is $9 once. Generated wrappers require the matching runtime. No subscription, PyPI or MCP Registry listing is claimed.
+
+[Agent setup](https://schema.contentsweep.ai/integrate) · [Product skill](https://schema.contentsweep.ai/SKILL.md) · [Task-to-tool reference](https://schema.contentsweep.ai/agent-assets/TOOL_REFERENCE.md). Skills support Codex and Claude Code and grant no upload, business-meaning approval, spending or destination-write permission. Historical test notes below retain their original scope; synthetic/internal qualification is not paid adoption.
+<!-- agent-current-status:end -->
+
 Turn a vendor CSV into a reviewed mapping and reusable Python transform.
 
 **[Try the free hosted example](https://schema.contentsweep.ai/?campaign=github-launch)** · **[See the sample artifact](https://schema.contentsweep.ai/sample)** · **[Working guides](https://schema.contentsweep.ai/guides)**

@@ -49,6 +49,10 @@ def create_app(root: Path | None = None, *, billing: Billing | None = None):
 
     app = FastAPI(title="Schema Mapper", lifespan=lifespan, docs_url=None, redoc_url=None)
     app.state.service, app.state.billing = service, billing
+    from .agent_docs import register as register_agent_docs
+    register_agent_docs(app, config.origin)
+    from . import agent_docs
+    agent_docs.register_assets(app)
     static = Path(__file__).with_name("web")
 
     @app.middleware("http")
@@ -106,6 +110,10 @@ def create_app(root: Path | None = None, *, billing: Billing | None = None):
     def javascript():
         return Response((static / "app.js").read_text(), media_type="text/javascript")
 
+    @app.get("/integrate", response_class=HTMLResponse)
+    def agent_integration():
+        return HTMLResponse(agent_docs.integration_page())
+
     @app.get("/style.css")
     def stylesheet():
         return Response((static / "style.css").read_text(), media_type="text/css")
@@ -146,7 +154,8 @@ def create_app(root: Path | None = None, *, billing: Billing | None = None):
         from html import escape
 
         from .marketing_content import GUIDES
-        paths = ["/", "/guides", "/sample", *["/guides/" + slug for slug in GUIDES]]
+        paths = ["/integrate", "/SKILL.md", "/", "/guides", "/sample", "/agents", "/pricing.md", "/capabilities.json",
+                 "/skills/contentsweep-schema-mapper/SKILL.md", *["/guides/" + slug for slug in GUIDES]]
         xml = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
         return Response(xml + "".join("<url><loc>" + escape(config.origin + path) + "</loc></url>" for path in paths) + "</urlset>", media_type="application/xml")
 
