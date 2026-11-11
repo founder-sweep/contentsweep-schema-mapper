@@ -72,3 +72,22 @@ python -m pytest -q tests
 The examples are synthetic. Test coverage is not customer validation, measured time savings, a security certification or a claim of commercial superiority. The hosted workflow processes uploaded sources on its server; read its [privacy and retention statement](https://schema.contentsweep.ai/privacy).
 
 Content Sweep LLC · https://schema.contentsweep.ai · founder@contentsweep.ai
+
+<!-- contentsweep-skill-distribution:begin -->
+## Install the agent skill
+
+Install this skill in the intended project, then choose the coding agents you use:
+
+```sh
+npx skills add founder-sweep/contentsweep-schema-mapper --skill review-schema-mapping
+```
+
+For Claude Code, add the ContentSweep marketplace and install this product:
+
+```sh
+claude plugin marketplace add founder-sweep/contentsweep-supplier-feed-examples
+claude plugin install contentsweep-schema-mapper@contentsweep
+```
+
+The marketplace contains Supplier Feeds, Data Quality Gate, Inspector and Schema Mapper. Each plugin loads its existing product skill and companion references. Installation grants no upload, spending, business-rule approval or destination-write permission. MCP connections and runtime dependencies are configured separately using the bundled [agent setup](skills/contentsweep-schema-mapper/AGENT_SETUP.md). Review the supported scope, privacy, free/local options and current hosted pricing before use.
+<!-- contentsweep-skill-distribution:end -->

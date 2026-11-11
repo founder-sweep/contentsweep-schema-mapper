@@ -1,0 +1,11 @@
+{
+  "name": "contentsweep-schema-mapper",
+  "version": "1.0.0",
+  "description": "Review flat vendor mappings, validate all records and reuse an approved Python transform.",
+  "author": {
+    "name": "Content Sweep LLC",
+    "email": "founder@contentsweep.ai"
+  },
+  "homepage": "https://schema.contentsweep.ai/",
+  "repository": "https://github.com/founder-sweep/contentsweep-schema-mapper"
+}
