@@ -32,5 +32,15 @@
     "url": "https://schema.contentsweep.ai/runtime/download",
     "filename": "contentsweep_schema_mapper-2.0.0b2-py3-none-any.whl",
     "sha256": "ac027620eede5acea16b79843bc1db9c1b8bbd3ee73e64d29d7cb35a23295704"
+  },
+  "owned_skill_files": {
+    "TOOLS.json": "199dcba6ab399c28aa5116b37c958fdfdca600e2d4ea8425eb6a821c37c0b060",
+    "agent.css": "9d19b21c1d1894c8bc2d5a8b9e9b7fa4f0c7f159466a1c4709e5e7d4dd44788e",
+    "claude.mcp.json": "0e9ba6651e8df6acc77ecf709f769b1cff75a0b353915829285f859877a4b18e",
+    "codex.toml": "1993729b9bb37a191d70a4aaf3dfd00b202e536c728cae9d152269c6bc1c22c0",
+    "AGENT_SETUP.md": "94be1a6c9a489f2875913d1a3637d1bde2e6ad03b7925f51e28174d3a730d41c",
+    "TOOL_REFERENCE.md": "9887c94a21931aa7dab917a37b1d55d58c7638bb88e779fc129b7d6574e87524",
+    "SKILL.md": "9ae8fc419f2716909df4ea2b51b150277e92e14b2711ee62d3fe9a8dac163ded",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
   }
 }
