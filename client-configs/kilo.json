@@ -1,0 +1,12 @@
+{
+  "mcp": {
+    "contentsweep-schema-mapper": {
+      "type": "local",
+      "command": [
+        "{env:CONTENTSWEEP_SCHEMA_MAPPER_MCP_COMMAND}"
+      ],
+      "enabled": true,
+      "timeout": 120000
+    }
+  }
+}

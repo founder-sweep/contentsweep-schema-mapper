@@ -1,0 +1,33 @@
+{
+  "name": "contentsweep-schema-mapper",
+  "version": "1.0.0",
+  "description": "Review flat vendor mappings, validate all records and reuse an approved Python transform.",
+  "author": {
+    "name": "Content Sweep LLC",
+    "email": "founder@contentsweep.ai"
+  },
+  "homepage": "https://schema.contentsweep.ai/",
+  "repository": "https://github.com/founder-sweep/contentsweep-schema-mapper",
+  "license": "Apache-2.0",
+  "logo": "assets/contentsweep.svg",
+  "skills": [
+    "skills/contentsweep-schema-mapper"
+  ],
+  "keywords": [
+    "mcp",
+    "review-schema-mapping",
+    "contentsweep"
+  ],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "CONTENTSWEEP_SCHEMA_MAPPER_MCP_COMMAND": {
+        "type": "string",
+        "title": "Absolute installed MCP executable path for Schema Mapper"
+      }
+    },
+    "required": [
+      "CONTENTSWEEP_SCHEMA_MAPPER_MCP_COMMAND"
+    ]
+  }
+}

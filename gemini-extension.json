@@ -1,0 +1,19 @@
+{
+  "name": "contentsweep-schema-mapper",
+  "version": "1.0.0",
+  "description": "Review flat vendor mappings, validate all records and reuse an approved Python transform.",
+  "mcpServers": {
+    "contentsweep-schema-mapper": {
+      "command": "${CONTENTSWEEP_SCHEMA_MAPPER_MCP_COMMAND}",
+      "args": []
+    }
+  },
+  "settings": [
+    {
+      "name": "Schema Mapper MCP executable",
+      "description": "Absolute installed MCP executable path for Schema Mapper",
+      "envVar": "CONTENTSWEEP_SCHEMA_MAPPER_MCP_COMMAND",
+      "sensitive": false
+    }
+  ]
+}

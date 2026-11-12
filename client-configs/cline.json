@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "contentsweep-schema-mapper": {
+      "command": "${env:CONTENTSWEEP_SCHEMA_MAPPER_MCP_COMMAND}",
+      "args": [],
+      "type": "stdio",
+      "disabled": false,
+      "autoApprove": [],
+      "timeout": 120
+    }
+  }
+}

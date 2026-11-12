@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "contentsweep-schema-mapper": {
+      "command": "${CONTENTSWEEP_SCHEMA_MAPPER_MCP_COMMAND}",
+      "args": [],
+      "type": "stdio"
+    }
+  }
+}
