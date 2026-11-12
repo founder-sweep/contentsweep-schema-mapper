@@ -18,7 +18,7 @@ Provide the requested setting in the native installation prompt. API keys are se
 
 ## Kilo
 
-Use the published marketplace entry when available, or merge `client-configs/kilo.json` into the intended project configuration and install the existing skill. The catalog entry includes a companion skill; companion installation requires a client version supporting that feature. Review prerequisites before installation.
+Use the published marketplace entry when available, or merge `client-configs/kilo.json` into your private user-level Kilo CLI configuration and install the existing skill. Alternatively set `KILO_CONFIG` to the absolute path of an explicitly trusted private configuration file. Kilo CLI rejects environment substitutions in untrusted project configuration and drops MCP entries with variable-bearing project headers; keep the supplied environment-based credentials in user-level configuration. The editor marketplace installs its prompted values into private MCP settings. The catalog entry includes a companion skill; companion installation requires a client version supporting that feature. Review prerequisites before installation.
 
 ## Cline
 
