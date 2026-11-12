@@ -22,7 +22,15 @@ Use the published marketplace entry when available, or merge `client-configs/kil
 
 ## Cline
 
-Ask Cline to follow this README and `llms-install.md`. Merge the entry in `client-configs/cline.json` into its MCP settings and provide the named setting privately. The templates use supported `${env:NAME}` interpolation. Make those variables available in the client launch environment, or fill the actual values directly in the client's private MCP settings. Restart the client after changing its launch environment. The hosted example selects `streamableHttp` explicitly. Keep tool approvals enabled.
+Ask Cline to follow this README and `llms-install.md`. Merge the entry in `client-configs/cline.json` into the editor extension's MCP settings and provide the named setting privately. Cline editor 4.1.26 supports `${env:NAME}` interpolation. Make those variables available in the client launch environment, or fill the actual values directly in the client's private MCP settings. Restart the client after changing its launch environment. The hosted editor example selects `streamableHttp` explicitly. Keep tool approvals enabled.
+
+Cline CLI 3.0.74 stores its connection under a `transport` object. Use its native command to write that schema instead of copying the editor JSON into a CLI profile. With the required private setting(s) available in the launch environment:
+
+```bash
+cline mcp add contentsweep-schema-mapper --yes --transport stdio -- "${CONTENTSWEEP_SCHEMA_MAPPER_MCP_COMMAND}"
+```
+
+For an isolated CLI profile, retain its `--config`, `--data-dir` and `--hooks-dir` options on configuration commands. Start a fresh Cline CLI task after adding the server so the model discovers its new tools. Copy the existing skill directory with every relative resource into the project's `.cline/skills/` directory; manual file copying does not require a second skill-install command. Verify an actual MCP result after setup.
 
 ## Cursor
 
