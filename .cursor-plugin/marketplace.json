@@ -1,0 +1,17 @@
+{
+  "name": "contentsweep-schema-mapper",
+  "owner": {
+    "name": "Content Sweep LLC",
+    "email": "founder@contentsweep.ai"
+  },
+  "metadata": {
+    "description": "Review flat vendor mappings, validate all records and reuse an approved Python transform."
+  },
+  "plugins": [
+    {
+      "name": "contentsweep-schema-mapper",
+      "source": "./",
+      "description": "Review flat vendor mappings, validate all records and reuse an approved Python transform."
+    }
+  ]
+}
