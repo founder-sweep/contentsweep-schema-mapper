@@ -22,7 +22,7 @@ Use the published marketplace entry when available, or merge `client-configs/kil
 
 ## Cline
 
-Ask Cline to follow this README and `llms-install.md`. Merge the entry in `client-configs/cline.json` into its MCP settings and provide the named setting privately. The hosted example selects `streamableHttp` explicitly. Keep tool approvals enabled.
+Ask Cline to follow this README and `llms-install.md`. Merge the entry in `client-configs/cline.json` into its MCP settings and provide the named setting privately. The templates use supported `${env:NAME}` interpolation. Make those variables available in the client launch environment, or fill the actual values directly in the client's private MCP settings. Restart the client after changing its launch environment. The hosted example selects `streamableHttp` explicitly. Keep tool approvals enabled.
 
 ## Cursor
 
