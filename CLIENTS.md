@@ -11,10 +11,10 @@ Follow the existing runtime setup in the README. Use a dedicated Python 3.12+ en
 Install the extension from this repository:
 
 ```sh
-gemini extensions install https://github.com/founder-sweep/contentsweep-schema-mapper
+gemini extensions install https://github.com/founder-sweep/contentsweep-schema-mapper --ref main
 ```
 
-Provide the requested setting in the native installation prompt. API keys are sensitive settings. The extension supplies the existing skill and default MCP connection; it does not approve tool calls or spending. For a project-managed connection, merge the Gemini example from `client-configs/gemini.json` into the intended profile.
+The explicit branch selects the integration source rather than an older Python runtime release archive. Provide the requested setting in the native installation prompt. API keys are sensitive settings. The extension supplies the existing skill and default MCP connection; it does not approve tool calls or spending. For a project-managed connection, merge the Gemini example from `client-configs/gemini.json` into the intended profile.
 
 ## Kilo
 
@@ -26,7 +26,7 @@ Ask Cline to follow this README and `llms-install.md`. Merge the entry in `clien
 
 ## Cursor
 
-Install the Cursor plugin from the marketplace or load this repository as a local plugin for development. Configure its declared variable in the plugin settings. The root `mcp.json` is the native plugin connection definition; the copy in `client-configs/cursor.json` is for a manually managed connection. For the manual copy, use Cursor's documented environment interpolation in place of the plugin variable. Preserve unrelated entries.
+Install the Cursor plugin from the marketplace or load this repository as a local plugin for development. Configure its declared variable in the plugin settings. The root `mcp.json` is the native plugin connection definition; the copy in `client-configs/cursor.json` is for a manually managed connection. For the manual copy, use Cursor's documented environment interpolation in place of the plugin variable. Preserve unrelated entries. With Cursor CLI, place local environments at absolute paths without spaces: the current CLI splits a no-argument stdio command containing spaces. A locally created executable symlink at a path without spaces is also suitable; it must point to the verified installed product executable.
 
 ## Skill and first task
 

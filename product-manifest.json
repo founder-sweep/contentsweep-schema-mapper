@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "title": "Schema Mapper",
+  "repository": "contentsweep-schema-mapper",
+  "plugin": "contentsweep-schema-mapper",
+  "skill": "review-schema-mapping",
+  "skill_path": "skills/contentsweep-schema-mapper/SKILL.md",
+  "description": "Review flat vendor mappings, validate all records and reuse an approved Python transform.",
+  "homepage": "https://schema.contentsweep.ai/",
+  "mode": "local",
+  "tools": 9,
+  "setting": "CONTENTSWEEP_SCHEMA_MAPPER_MCP_COMMAND",
+  "command": "schema-map-mcp",
+  "module": "mcp_products.schema_mapper.mcp",
+  "pricing": "Local CLI/SDK/MCP and hosted preview/validation are free. Optional hosted approved artifact download is $9 once; no subscription.",
+  "scope": "Flat schemas and documented primitive casts, explicit reviewed business meanings and fingerprint-bound approval. Python 3.12+ and matching 2.0.0b2 runtime; hosted source limit 1 MiB.",
+  "source": "public",
+  "connection_modes": [
+    "local"
+  ],
+  "required_settings": [
+    "CONTENTSWEEP_SCHEMA_MAPPER_MCP_COMMAND"
+  ],
+  "example_references": [
+    "examples/schema-mapper/vendor.csv",
+    "examples/schema-mapper/customer.schema.json",
+    "examples/schema-mapper/expected.jsonl"
+  ],
+  "artifact": {
+    "version": "2.0.0b2",
+    "python": ">=3.12",
+    "url": "https://schema.contentsweep.ai/runtime/download",
+    "filename": "contentsweep_schema_mapper-2.0.0b2-py3-none-any.whl",
+    "sha256": "ac027620eede5acea16b79843bc1db9c1b8bbd3ee73e64d29d7cb35a23295704"
+  }
+}
