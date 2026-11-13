@@ -5,7 +5,7 @@
   "plugin": "contentsweep-schema-mapper",
   "skill": "review-schema-mapping",
   "skill_path": "skills/contentsweep-schema-mapper/SKILL.md",
-  "description": "Review flat vendor mappings, validate all records and reuse an approved Python transform.",
+  "description": "Proven reviewed vendor mapping with exact identifiers and decimals, reusable transforms and drift stops. Includes a repeatable local MCP demo.",
   "homepage": "https://schema.contentsweep.ai/",
   "mode": "local",
   "tools": 9,
@@ -86,5 +86,20 @@
       "recorded/transformed.json": "eb17cd66c57fd9a90b13749661368e7ba8a3a1744f65a4fd81a68ad5ee5b4e22",
       "run.py": "2376130d1534c3a3122eac183c1e01ec9da050de9ac6045b9d4c790bde572aae"
     }
+  },
+  "marketing": {
+    "product": "schema-mapper",
+    "title": "Schema Mapper",
+    "description": "Proven reviewed vendor mapping with exact identifiers and decimals, reusable transforms and drift stops. Includes a repeatable local MCP demo.",
+    "capability": "Fully capable of reviewed flat-file vendor mapping, exact-value transformation and compatible reuse with the matching runtime.",
+    "proof": "The local MCP demo stops unresolved approval, preserves identifier 000401 and decimal 123456789012.123456789, generates a reusable transform, accepts compatible input, and stops structural drift.",
+    "scope": "Flat schemas and documented primitive casts, explicit reviewed business meanings and fingerprint-bound approval. Python 3.12+ and matching 2.0.0b2 runtime; hosted source limit 1 MiB.",
+    "homepage": "https://schema.contentsweep.ai/",
+    "demo_url": "https://schema.contentsweep.ai/demos/vendor-mapping",
+    "recorded_result_url": "https://schema.contentsweep.ai/demos/vendor-mapping/expected.json",
+    "agent_evidence_url": "https://schema.contentsweep.ai/demos/vendor-mapping/agent-evidence.json",
+    "demo_archive_sha256": "139edcd1e54346a9134008eff16318980f34479f5d0901f6792e4a2f992375f0",
+    "verification": "passed repeatable synthetic MCP workflows",
+    "native_gemini_capture": "pending"
   }
 }

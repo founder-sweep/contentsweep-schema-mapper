@@ -1,7 +1,7 @@
 {
   "name": "contentsweep-schema-mapper",
   "version": "1.0.0",
-  "description": "Review flat vendor mappings, validate all records and reuse an approved Python transform.",
+  "description": "Proven reviewed vendor mapping with exact identifiers and decimals, reusable transforms and drift stops. Includes a repeatable local MCP demo.",
   "author": {
     "name": "Content Sweep LLC",
     "email": "founder@contentsweep.ai"

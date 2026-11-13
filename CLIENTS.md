@@ -1,6 +1,17 @@
 # Schema Mapper: coding-agent setup
 
-Review flat vendor mappings, validate all records and reuse an approved Python transform.
+<!-- contentsweep-proven-capability:begin -->
+**Fully capable of reviewed flat-file vendor mapping, exact-value transformation and compatible reuse with the matching runtime.**
+
+Proven reviewed vendor mapping with exact identifiers and decimals, reusable transforms and drift stops. Includes a repeatable local MCP demo.
+
+The local MCP demo stops unresolved approval, preserves identifier 000401 and decimal 123456789012.123456789, generates a reusable transform, accepts compatible input, and stops structural drift.
+
+[Inspect the result and repeat the demo](https://schema.contentsweep.ai/demos/vendor-mapping) · [Runnable package](demo/README.md) · [Capability and verification details](CAPABILITIES.md)
+<!-- contentsweep-proven-capability:end -->
+
+
+Proven reviewed vendor mapping with exact identifiers and decimals, reusable transforms and drift stops. Includes a repeatable local MCP demo.
 
 ## Runtime and credentials
 

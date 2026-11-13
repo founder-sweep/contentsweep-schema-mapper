@@ -5,13 +5,13 @@
     "email": "founder@contentsweep.ai"
   },
   "metadata": {
-    "description": "Review flat vendor mappings, validate all records and reuse an approved Python transform."
+    "description": "Proven reviewed vendor mapping with exact identifiers and decimals, reusable transforms and drift stops. Includes a repeatable local MCP demo."
   },
   "plugins": [
     {
       "name": "contentsweep-schema-mapper",
       "source": "./",
-      "description": "Review flat vendor mappings, validate all records and reuse an approved Python transform."
+      "description": "Proven reviewed vendor mapping with exact identifiers and decimals, reusable transforms and drift stops. Includes a repeatable local MCP demo."
     }
   ]
 }
