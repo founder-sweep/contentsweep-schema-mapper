@@ -65,11 +65,11 @@
       "later.csv": "01fca02c0b725b514cda94887544937b42635bea8bda64900bf0a9714307d659",
       "vendor.csv": "2c0f12f6355cd033f374bebb65c7c4c3666d31dfaa19c4f90a13a99b920d4df6"
     },
-    "archive_sha256": "867fe1b12109e1dcc52a01ea9b3778c207a16d4f0e69f96f1d025511292aa6ac",
+    "archive_sha256": "139edcd1e54346a9134008eff16318980f34479f5d0901f6792e4a2f992375f0",
     "recorded_result_sha256": "823610b2d152668248825b53afbbc771306037240e41108890f7cf70a3ba785a",
     "agent_status": "pending",
     "fixtures_path": "demo/fixtures",
-    "source_base_commit": "58d19eac8d3c08cc5e6b3fc220249d1d6374c560",
+    "source_base_commit": "9cdbf36d6ba3ab41c62f9b2d79ca4b141fe78f27",
     "files": {
       "AGENT_PROMPT.md": "7efec34459c9311dde2589fa7933dc150aec1fa128772ea3e69116e276744ec9",
       "README.md": "0829cab3aff4694898ee7c0d1a491428c7d0cc6051977f260998a2cff3932ab5",
@@ -81,7 +81,7 @@
       "fixtures/expected.jsonl": "b9996185551e9c5bac1db1b9f514177b47f2ea62672c41bbf72d2ba69ff7cd2c",
       "fixtures/later.csv": "01fca02c0b725b514cda94887544937b42635bea8bda64900bf0a9714307d659",
       "fixtures/vendor.csv": "2c0f12f6355cd033f374bebb65c7c4c3666d31dfaa19c4f90a13a99b920d4df6",
-      "manifest.json": "d9610fb235b178d4aab9128abe30ff9b616b7f98233a7516d6fa6ade8a56d400",
+      "manifest.json": "7a697be14e5c5d69954e541de73b08e3eab499474be1fdbe9938257c6ea729ab",
       "recorded/transform.py": "c6303e7fa3c87c4a32267b441b1a94883c3b1659439daf9cdabfce9aa666fed1",
       "recorded/transformed.json": "eb17cd66c57fd9a90b13749661368e7ba8a3a1744f65a4fd81a68ad5ee5b4e22",
       "run.py": "2376130d1534c3a3122eac183c1e01ec9da050de9ac6045b9d4c790bde572aae"
