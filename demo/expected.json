@@ -1,0 +1,562 @@
+{
+  "evidence_kind": "Recorded deterministic MCP execution of owned synthetic fixtures; not a customer outcome",
+  "execution": "deterministic MCP client; not a native agent transcript",
+  "fixtures_sha256": {
+    "customer.schema.json": "a8a0cfacc7fb81694e1a8626c42fd236e2c6d969acf1ca94b253826cf90b3ae4",
+    "decisions.json": "34d43c3d634e1692fc2b9732ccad1db968d15b94908ce589691aaad910539497",
+    "drift.csv": "93ae254d149d30c8ae9b9d1425ee2126893d32dfbb33beaf28378b6c8aa0562a",
+    "expected.jsonl": "b9996185551e9c5bac1db1b9f514177b47f2ea62672c41bbf72d2ba69ff7cd2c",
+    "later.csv": "01fca02c0b725b514cda94887544937b42635bea8bda64900bf0a9714307d659",
+    "vendor.csv": "2c0f12f6355cd033f374bebb65c7c4c3666d31dfaa19c4f90a13a99b920d4df6"
+  },
+  "internal_noncash_qualification": true,
+  "mode": "local",
+  "original_result_sha256": "823610b2d152668248825b53afbbc771306037240e41108890f7cf70a3ba785a",
+  "product": "schema_mapper",
+  "recorded_at": "2026-11-13T16:12:45.369358+00:00",
+  "result": {
+    "approved_mapping": {
+      "approval": {
+        "at": "2026-11-13T15:05:16.128387+00:00",
+        "mapping_fingerprint": "sha256:4d0951375b563978fd9e995e4cf6e934d585c5c72969ac5ca6689da813310c1e",
+        "reviewer": "authorized synthetic-fixture reviewer"
+      },
+      "engine_version": "schema-mapper/2.0.0",
+      "fields": [
+        {
+          "alternatives": [
+            {
+              "lexical": 0,
+              "score": 0,
+              "source_path": "$.account_code",
+              "type_compatible": false
+            },
+            {
+              "lexical": 0,
+              "score": 0,
+              "source_path": "$.credit_limit",
+              "type_compatible": false
+            },
+            {
+              "lexical": 0,
+              "score": 0,
+              "source_path": "$.enabled",
+              "type_compatible": false
+            },
+            {
+              "lexical": 0,
+              "score": 0,
+              "source_path": "$.givenName",
+              "type_compatible": false
+            }
+          ],
+          "confidence_band": "review_required",
+          "decision": {
+            "kind": "direct",
+            "sources": [
+              "$.enabled"
+            ]
+          },
+          "evidence": {
+            "lexical": 0,
+            "reason": "insufficient or tied evidence",
+            "review_resolution": "explicit source choice",
+            "runner_up_score": 0,
+            "type_compatible": false
+          },
+          "match_score": 0,
+          "target_path": "$.active",
+          "transform": null
+        },
+        {
+          "alternatives": [
+            {
+              "lexical": 1,
+              "score": 125e-2,
+              "source_path": "$.credit_limit",
+              "type_compatible": true
+            },
+            {
+              "lexical": 0,
+              "score": 0,
+              "source_path": "$.account_code",
+              "type_compatible": false
+            },
+            {
+              "lexical": 0,
+              "score": 0,
+              "source_path": "$.enabled",
+              "type_compatible": false
+            },
+            {
+              "lexical": 0,
+              "score": 0,
+              "source_path": "$.givenName",
+              "type_compatible": false
+            }
+          ],
+          "confidence_band": "review_required",
+          "decision": {
+            "kind": "direct",
+            "sources": [
+              "$.credit_limit"
+            ]
+          },
+          "evidence": {
+            "lexical": 1,
+            "reason": "unique lexical/type candidate",
+            "runner_up_score": 0,
+            "type_compatible": true
+          },
+          "match_score": 125e-2,
+          "target_path": "$.credit_limit",
+          "transform": null
+        },
+        {
+          "alternatives": [
+            {
+              "lexical": 0,
+              "score": 25e-2,
+              "source_path": "$.account_code",
+              "type_compatible": true
+            },
+            {
+              "lexical": 0,
+              "score": 25e-2,
+              "source_path": "$.enabled",
+              "type_compatible": true
+            },
+            {
+              "lexical": 0,
+              "score": 25e-2,
+              "source_path": "$.givenName",
+              "type_compatible": true
+            },
+            {
+              "lexical": 0,
+              "score": 0,
+              "source_path": "$.credit_limit",
+              "type_compatible": false
+            }
+          ],
+          "confidence_band": "review_required",
+          "decision": {
+            "kind": "direct",
+            "sources": [
+              "$.account_code"
+            ]
+          },
+          "evidence": {
+            "lexical": 0,
+            "reason": "insufficient or tied evidence",
+            "review_resolution": "explicit source choice",
+            "runner_up_score": 25e-2,
+            "type_compatible": true
+          },
+          "match_score": 25e-2,
+          "target_path": "$.customer_id",
+          "transform": null
+        },
+        {
+          "alternatives": [
+            {
+              "lexical": 3333e-4,
+              "score": 5833e-4,
+              "source_path": "$.givenName",
+              "type_compatible": true
+            },
+            {
+              "lexical": 0,
+              "score": 25e-2,
+              "source_path": "$.account_code",
+              "type_compatible": true
+            },
+            {
+              "lexical": 0,
+              "score": 25e-2,
+              "source_path": "$.enabled",
+              "type_compatible": true
+            },
+            {
+              "lexical": 0,
+              "score": 0,
+              "source_path": "$.credit_limit",
+              "type_compatible": false
+            }
+          ],
+          "confidence_band": "review_required",
+          "decision": {
+            "kind": "direct",
+            "sources": [
+              "$.givenName"
+            ]
+          },
+          "evidence": {
+            "lexical": 3333e-4,
+            "reason": "unique lexical/type candidate",
+            "review_resolution": "explicit source choice",
+            "runner_up_score": 25e-2,
+            "type_compatible": true
+          },
+          "match_score": 5833e-4,
+          "target_path": "$.first_name",
+          "transform": null
+        }
+      ],
+      "mapping_fingerprint": "sha256:4d0951375b563978fd9e995e4cf6e934d585c5c72969ac5ca6689da813310c1e",
+      "parent_fingerprint": "sha256:404854b88e9bb83c094563882947bb607110116850bb520641aff4d492bba1df",
+      "revision": 3,
+      "schema_version": "2.0",
+      "scope": {
+        "domain": "customer-imports",
+        "user": "synthetic-demo",
+        "vendor": "synthetic-vendor"
+      },
+      "score_meaning": "uncalibrated lexical/type ranking score, not probability",
+      "source_fingerprint": "sha256:2c0f12f6355cd033f374bebb65c7c4c3666d31dfaa19c4f90a13a99b920d4df6",
+      "source_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "account_code": {
+            "type": "string"
+          },
+          "credit_limit": {
+            "type": "number"
+          },
+          "enabled": {
+            "type": "string"
+          },
+          "givenName": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "account_code",
+          "credit_limit",
+          "enabled",
+          "givenName"
+        ],
+        "type": "object",
+        "x-inference": {
+          "all_records_parsed": true,
+          "bytes": 110,
+          "fields": {
+            "account_code": {
+              "empty": 0,
+              "null": 0,
+              "present": 2
+            },
+            "credit_limit": {
+              "empty": 0,
+              "null": 0,
+              "present": 2
+            },
+            "enabled": {
+              "empty": 0,
+              "null": 0,
+              "present": 2
+            },
+            "givenName": {
+              "empty": 0,
+              "null": 0,
+              "present": 2
+            }
+          },
+          "format": "csv",
+          "locale": "invariant",
+          "sample_complete": true,
+          "sampled_records": 2,
+          "total_records": 2,
+          "version": "1"
+        },
+        "x-source-fingerprint": "sha256:2c0f12f6355cd033f374bebb65c7c4c3666d31dfaa19c4f90a13a99b920d4df6"
+      },
+      "source_schema_fingerprint": "sha256:3b30da2f8b26f376d2d091c5e8a3c78d92a7c5197a96633dcff7be31ae7c9575",
+      "status": "approved",
+      "target": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "active": {
+            "type": "boolean"
+          },
+          "credit_limit": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "customer_id": {
+            "type": "string"
+          },
+          "first_name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "active",
+          "credit_limit",
+          "customer_id",
+          "first_name"
+        ],
+        "type": "object"
+      },
+      "target_fingerprint": "sha256:076686626f91aebe19beb9948cf7ecdfbaa34c36282121cc3121d97a0da4d34c",
+      "transformation_ir": {
+        "operations": [
+          {
+            "op": "cast",
+            "source": "$.enabled",
+            "target": "$.active",
+            "to": "boolean"
+          },
+          {
+            "op": "cast",
+            "source": "$.credit_limit",
+            "target": "$.credit_limit",
+            "to": "number"
+          },
+          {
+            "op": "cast",
+            "source": "$.account_code",
+            "target": "$.customer_id",
+            "to": "string"
+          },
+          {
+            "op": "cast",
+            "source": "$.givenName",
+            "target": "$.first_name",
+            "to": "string"
+          }
+        ],
+        "version": "1"
+      }
+    },
+    "drift": {
+      "changes": {
+        "added": [
+          "renamed_account_code"
+        ],
+        "changed": [
+          
+        ],
+        "format_changed": false,
+        "removed": [
+          "account_code"
+        ],
+        "required_changed": true
+      },
+      "compatible": false,
+      "content_changed": true,
+      "coverage": {
+        "all_records_parsed": true,
+        "bytes": 118,
+        "fields": {
+          "credit_limit": {
+            "empty": 0,
+            "null": 0,
+            "present": 2
+          },
+          "enabled": {
+            "empty": 0,
+            "null": 0,
+            "present": 2
+          },
+          "givenName": {
+            "empty": 0,
+            "null": 0,
+            "present": 2
+          },
+          "renamed_account_code": {
+            "empty": 0,
+            "null": 0,
+            "present": 2
+          }
+        },
+        "format": "csv",
+        "locale": "invariant",
+        "sample_complete": true,
+        "sampled_records": 2,
+        "total_records": 2,
+        "version": "1"
+      },
+      "source_schema_fingerprint": "sha256:1cfc581df7230abe00c5d11ccb7614ee4311743b198da8551d393cab5a667f9e",
+      "status": "review_required"
+    },
+    "exact_identifiers_and_decimals": true,
+    "reuse": {
+      "receipt": {
+        "drift": {
+          "changes": {
+            "added": [
+              
+            ],
+            "changed": [
+              
+            ],
+            "format_changed": false,
+            "removed": [
+              
+            ],
+            "required_changed": false
+          },
+          "compatible": true,
+          "content_changed": true,
+          "coverage": {
+            "all_records_parsed": true,
+            "bytes": 118,
+            "fields": {
+              "account_code": {
+                "empty": 0,
+                "null": 0,
+                "present": 2
+              },
+              "credit_limit": {
+                "empty": 0,
+                "null": 0,
+                "present": 2
+              },
+              "enabled": {
+                "empty": 0,
+                "null": 0,
+                "present": 2
+              },
+              "givenName": {
+                "empty": 0,
+                "null": 0,
+                "present": 2
+              }
+            },
+            "format": "csv",
+            "locale": "invariant",
+            "sample_complete": true,
+            "sampled_records": 2,
+            "total_records": 2,
+            "version": "1"
+          },
+          "source_schema_fingerprint": "sha256:3b30da2f8b26f376d2d091c5e8a3c78d92a7c5197a96633dcff7be31ae7c9575",
+          "status": "compatible"
+        },
+        "engine_version": "schema-mapper/2.0.0",
+        "mapping_fingerprint": "sha256:4d0951375b563978fd9e995e4cf6e934d585c5c72969ac5ca6689da813310c1e",
+        "output_fingerprint": "sha256:74ea8f6d10cdee3c55dbfe89bbb0091d56833de783b20953621769a7e54f7d4b",
+        "records": 2,
+        "source_fingerprint": "sha256:01fca02c0b725b514cda94887544937b42635bea8bda64900bf0a9714307d659",
+        "target_fingerprint": "sha256:076686626f91aebe19beb9948cf7ecdfbaa34c36282121cc3121d97a0da4d34c"
+      },
+      "records": [
+        {
+          "active": true,
+          "credit_limit": 123456789012123456789e-9,
+          "customer_id": "000401",
+          "first_name": "Ada Updated"
+        },
+        {
+          "active": false,
+          "credit_limit": 250005e-2,
+          "customer_id": "000402",
+          "first_name": "Grace"
+        }
+      ]
+    },
+    "transformed": {
+      "receipt": {
+        "drift": {
+          "changes": {
+            "added": [
+              
+            ],
+            "changed": [
+              
+            ],
+            "format_changed": false,
+            "removed": [
+              
+            ],
+            "required_changed": false
+          },
+          "compatible": true,
+          "content_changed": false,
+          "coverage": {
+            "all_records_parsed": true,
+            "bytes": 110,
+            "fields": {
+              "account_code": {
+                "empty": 0,
+                "null": 0,
+                "present": 2
+              },
+              "credit_limit": {
+                "empty": 0,
+                "null": 0,
+                "present": 2
+              },
+              "enabled": {
+                "empty": 0,
+                "null": 0,
+                "present": 2
+              },
+              "givenName": {
+                "empty": 0,
+                "null": 0,
+                "present": 2
+              }
+            },
+            "format": "csv",
+            "locale": "invariant",
+            "sample_complete": true,
+            "sampled_records": 2,
+            "total_records": 2,
+            "version": "1"
+          },
+          "source_schema_fingerprint": "sha256:3b30da2f8b26f376d2d091c5e8a3c78d92a7c5197a96633dcff7be31ae7c9575",
+          "status": "compatible"
+        },
+        "engine_version": "schema-mapper/2.0.0",
+        "mapping_fingerprint": "sha256:4d0951375b563978fd9e995e4cf6e934d585c5c72969ac5ca6689da813310c1e",
+        "output_fingerprint": "sha256:19e74644e7416e0e7ba4f663042e530e938f5258faefada283f89b54a63ae48c",
+        "records": 2,
+        "source_fingerprint": "sha256:2c0f12f6355cd033f374bebb65c7c4c3666d31dfaa19c4f90a13a99b920d4df6",
+        "target_fingerprint": "sha256:076686626f91aebe19beb9948cf7ecdfbaa34c36282121cc3121d97a0da4d34c"
+      },
+      "records": [
+        {
+          "active": true,
+          "credit_limit": 123456789012123456789e-9,
+          "customer_id": "000401",
+          "first_name": "Ada"
+        },
+        {
+          "active": false,
+          "credit_limit": 250005e-2,
+          "customer_id": "000402",
+          "first_name": "Grace"
+        }
+      ]
+    },
+    "unresolved": {
+      "_mcp_error": "Error executing tool transform_file: exact mapping approval required: {\"accepted\":false,\"checked_fields\":4,\"errors\":[{\"error\":\"unresolved mapping requires review\"},{\"error\":\"unresolved mapping requires review\"}],\"valid\":false}"
+    },
+    "wrapper_requires_matching_runtime": true
+  },
+  "server": {
+    "description": null,
+    "icons": null,
+    "name": "schema-mapper-local",
+    "title": null,
+    "version": "",
+    "website_url": null
+  },
+  "status": "passed",
+  "synthetic": true,
+  "tools": [
+    "infer_schema",
+    "map_to_schema",
+    "review_mapping",
+    "resolve_mapping",
+    "approve_mapping",
+    "validate_schema_mapping",
+    "check_schema_drift",
+    "transform_file",
+    "generate_transformation"
+  ]
+}

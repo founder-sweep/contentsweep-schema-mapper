@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "customer_id": {"type": "string"},
+    "first_name": {"type": "string"},
+    "credit_limit": {"type": "number", "minimum": 0},
+    "active": {"type": "boolean"}
+  },
+  "required": ["customer_id", "first_name", "credit_limit", "active"]
+}

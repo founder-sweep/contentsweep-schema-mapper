@@ -99,3 +99,13 @@ Review flat vendor mappings, validate all records and reuse an approved Python t
 
 Follow [client installation and recovery](CLIENTS.md). Native configuration examples, required settings, the existing skill and supported scope are included. Catalog submission and acceptance are recorded separately.
 <!-- contentsweep-client-distribution:end -->
+
+<!-- contentsweep-product-demo:begin -->
+## Reproduce the product demo
+
+Review a vendor mapping without losing identifiers or decimals.
+
+[Public walkthrough](https://schema.contentsweep.ai/demos/vendor-mapping) · [Runnable package](demo/README.md) · [Native agent evidence](demo/agent-evidence.json)
+
+Owned synthetic input, actual recorded output, expected stop cases, checksums, installation and pricing. The page reports native agent verification separately from deterministic MCP checks. Live hosted execution uses your own private credentials and explicit evaluation allowance.
+<!-- contentsweep-product-demo:end -->

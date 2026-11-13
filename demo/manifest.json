@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "product": "schema_mapper",
+  "title": "Review a vendor mapping without losing identifiers or decimals",
+  "task": "Stop unresolved decisions, approve the supplied synthetic correspondence, transform and reuse it, then stop on structural drift.",
+  "synthetic": true,
+  "slug": "vendor-mapping",
+  "url": "https://schema.contentsweep.ai/demos/vendor-mapping",
+  "default_mode": "local",
+  "modes": [
+    "local"
+  ],
+  "units": 0,
+  "setting": "CONTENTSWEEP_SCHEMA_MAPPER_MCP_COMMAND",
+  "endpoint": null,
+  "runtime_artifact": {
+    "version": "2.0.0b2",
+    "python": ">=3.12",
+    "url": "https://schema.contentsweep.ai/runtime/download",
+    "filename": "contentsweep_schema_mapper-2.0.0b2-py3-none-any.whl",
+    "sha256": "ac027620eede5acea16b79843bc1db9c1b8bbd3ee73e64d29d7cb35a23295704"
+  },
+  "skill": "review-schema-mapping",
+  "repository": "https://github.com/founder-sweep/contentsweep-schema-mapper",
+  "pricing": "Local CLI/SDK/MCP and hosted preview/validation are free. Optional hosted approved artifact download is $9 once; no subscription.",
+  "scope": "Flat schemas and documented primitive casts, explicit reviewed business meanings and fingerprint-bound approval. Python 3.12+ and matching 2.0.0b2 runtime; hosted source limit 1 MiB.",
+  "cases": [
+    "unresolved",
+    "reviewed",
+    "reuse",
+    "drift"
+  ],
+  "campaign": "github-launch",
+  "fixtures_sha256": {
+    "customer.schema.json": "a8a0cfacc7fb81694e1a8626c42fd236e2c6d969acf1ca94b253826cf90b3ae4",
+    "decisions.json": "34d43c3d634e1692fc2b9732ccad1db968d15b94908ce589691aaad910539497",
+    "drift.csv": "93ae254d149d30c8ae9b9d1425ee2126893d32dfbb33beaf28378b6c8aa0562a",
+    "expected.jsonl": "b9996185551e9c5bac1db1b9f514177b47f2ea62672c41bbf72d2ba69ff7cd2c",
+    "later.csv": "01fca02c0b725b514cda94887544937b42635bea8bda64900bf0a9714307d659",
+    "vendor.csv": "2c0f12f6355cd033f374bebb65c7c4c3666d31dfaa19c4f90a13a99b920d4df6"
+  },
+  "recorded_result": "passed deterministic MCP execution",
+  "agent_run": "pending",
+  "runner_sha256": "2376130d1534c3a3122eac183c1e01ec9da050de9ac6045b9d4c790bde572aae",
+  "expected_sha256": "d4cd98501a3d5d7092d529196ed2419e8ddbad6bd39ff5a23127eb1cfd55a464",
+  "recorded_at": "2026-11-13T16:12:45.369358+00:00",
+  "dependencies": {
+    "python": ">=3.12",
+    "mcp": ">=2.3,<3"
+  },
+  "source_provenance": {
+    "product_base_commit": "261d302bc012c26cbacbfca5d71ec80714fa4c92",
+    "distribution_base_commit": "58d19eac8d3c08cc5e6b3fc220249d1d6374c560",
+    "generator_sha256": "0b393f8d142a558d511da51de447e61711a77796cbfc37542bb191a43c2afae4"
+  },
+  "supplemental_sha256": {
+    "transform.py": "c6303e7fa3c87c4a32267b441b1a94883c3b1659439daf9cdabfce9aa666fed1",
+    "transformed.json": "eb17cd66c57fd9a90b13749661368e7ba8a3a1744f65a4fd81a68ad5ee5b4e22"
+  }
+}

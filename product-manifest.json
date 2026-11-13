@@ -42,5 +42,49 @@
     "TOOL_REFERENCE.md": "3cf84b97ca10d2ee66016294176774a6dc195c7c1e9c8b2ab0bba2e083d63197",
     "SKILL.md": "9ae8fc419f2716909df4ea2b51b150277e92e14b2711ee62d3fe9a8dac163ded",
     "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "demo": {
+    "url": "https://schema.contentsweep.ai/demos/vendor-mapping",
+    "slug": "vendor-mapping",
+    "title": "Review a vendor mapping without losing identifiers or decimals",
+    "cases": [
+      "unresolved",
+      "reviewed",
+      "reuse",
+      "drift"
+    ],
+    "default_mode": "local",
+    "package_path": "demo",
+    "max_units": 0,
+    "campaign": "github-launch",
+    "artifact_hashes": {
+      "customer.schema.json": "a8a0cfacc7fb81694e1a8626c42fd236e2c6d969acf1ca94b253826cf90b3ae4",
+      "decisions.json": "34d43c3d634e1692fc2b9732ccad1db968d15b94908ce589691aaad910539497",
+      "drift.csv": "93ae254d149d30c8ae9b9d1425ee2126893d32dfbb33beaf28378b6c8aa0562a",
+      "expected.jsonl": "b9996185551e9c5bac1db1b9f514177b47f2ea62672c41bbf72d2ba69ff7cd2c",
+      "later.csv": "01fca02c0b725b514cda94887544937b42635bea8bda64900bf0a9714307d659",
+      "vendor.csv": "2c0f12f6355cd033f374bebb65c7c4c3666d31dfaa19c4f90a13a99b920d4df6"
+    },
+    "archive_sha256": "867fe1b12109e1dcc52a01ea9b3778c207a16d4f0e69f96f1d025511292aa6ac",
+    "recorded_result_sha256": "823610b2d152668248825b53afbbc771306037240e41108890f7cf70a3ba785a",
+    "agent_status": "pending",
+    "fixtures_path": "demo/fixtures",
+    "source_base_commit": "58d19eac8d3c08cc5e6b3fc220249d1d6374c560",
+    "files": {
+      "AGENT_PROMPT.md": "7efec34459c9311dde2589fa7933dc150aec1fa128772ea3e69116e276744ec9",
+      "README.md": "0829cab3aff4694898ee7c0d1a491428c7d0cc6051977f260998a2cff3932ab5",
+      "agent-evidence.json": "904e04caf0318dd8d4a6e7d469aa9818b449d0c2ba9446f691dc969092f83604",
+      "expected.json": "d4cd98501a3d5d7092d529196ed2419e8ddbad6bd39ff5a23127eb1cfd55a464",
+      "fixtures/customer.schema.json": "a8a0cfacc7fb81694e1a8626c42fd236e2c6d969acf1ca94b253826cf90b3ae4",
+      "fixtures/decisions.json": "34d43c3d634e1692fc2b9732ccad1db968d15b94908ce589691aaad910539497",
+      "fixtures/drift.csv": "93ae254d149d30c8ae9b9d1425ee2126893d32dfbb33beaf28378b6c8aa0562a",
+      "fixtures/expected.jsonl": "b9996185551e9c5bac1db1b9f514177b47f2ea62672c41bbf72d2ba69ff7cd2c",
+      "fixtures/later.csv": "01fca02c0b725b514cda94887544937b42635bea8bda64900bf0a9714307d659",
+      "fixtures/vendor.csv": "2c0f12f6355cd033f374bebb65c7c4c3666d31dfaa19c4f90a13a99b920d4df6",
+      "manifest.json": "d9610fb235b178d4aab9128abe30ff9b616b7f98233a7516d6fa6ade8a56d400",
+      "recorded/transform.py": "c6303e7fa3c87c4a32267b441b1a94883c3b1659439daf9cdabfce9aa666fed1",
+      "recorded/transformed.json": "eb17cd66c57fd9a90b13749661368e7ba8a3a1744f65a4fd81a68ad5ee5b4e22",
+      "run.py": "2376130d1534c3a3122eac183c1e01ec9da050de9ac6045b9d4c790bde572aae"
+    }
   }
 }

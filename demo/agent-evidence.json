@@ -1,0 +1,37 @@
+{
+  "product": "schema_mapper",
+  "status": "pending",
+  "reason": "No successful native terminal result yet; free-tier attempts encountered quota/503/stream failures and invalid reconstructed mapping approvals. Deterministic MCP checks passed; native completion is not claimed.",
+  "client": "Gemini CLI",
+  "client_version": "0.68.0",
+  "models_observed": [
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.8-flash"
+  ],
+  "assertions": [],
+  "synthetic": true,
+  "internal_noncash": true,
+  "customer_outcome": false,
+  "native_mcp_tool_counts": {
+    "generate_transformation": 8,
+    "transform_file": 13,
+    "check_schema_drift": 6,
+    "approve_mapping": 8,
+    "review_mapping": 4,
+    "infer_schema": 3,
+    "map_to_schema": 3,
+    "validate_schema_mapping": 3,
+    "resolve_mapping": 4
+  },
+  "logs_sha256": {
+    "gemini-schema_mapper-native-brief.jsonl": "60d9476375107b057955cc094cf3ec86a10433b0d34b250586e8cb19917e5d37",
+    "gemini-schema_mapper-native-continuation.jsonl": "36b2a7b0726a786fd477b36f366f89a255674f3959313753f7d057897a9037b2",
+    "gemini-schema_mapper-native-corrected.jsonl": "c057398133bfa607176b0b0156c0d4dbf768ad429ccc08944aa02f56403d195c",
+    "gemini-schema_mapper-native-final.jsonl": "06eec17e839ce0f3e6e5e36003f264145970ad2c7674cd532390aef176dedf14",
+    "gemini-schema_mapper-native-flash.jsonl": "19a625f178337afa13e33fe00dddcdfc216f23d0f9ae646a2a779bcc2c18cbac",
+    "gemini-schema_mapper-native-formatted.jsonl": "4a7407fd598253bec3b8a56fda5203f0d0bde36022c387eb1fa7a3020cf2c439",
+    "gemini-schema_mapper-native.jsonl": "2ccfbc22265602b5df49593edb5fadb9c17d42d398c02bce49ab97396943f2fd"
+  },
+  "transport_note": "Native MCP workflow; exact fixture transfer may use a reviewed native shell helper. Deterministic byte checks are recorded separately."
+}
