@@ -10,7 +10,7 @@ The local MCP demo stops unresolved approval, preserves identifier 000401 and de
 
 The recorded results use owned synthetic fixtures and real product MCP calls. All six primary workflows and both DAG/Deployment local alternatives passed again from fresh public-source checkouts. This proves the documented scenarios and deliberate stop cases. It is not a claim of arbitrary input support, security certification, universal client completion or independent customer adoption.
 
-Native Gemini capture for this exact demo: **pending**. Schema Mapper's deterministic local MCP workflow passes; the fresh native capture remains pending after provider and approval-reconstruction failures.
+Native Gemini capture for this exact demo: **passed**. The actual review, exact-fingerprint approval and initial-transform session from November 13 was resumed to verified completion on November 17. Native MCP calls verified compatible reuse, matching-runtime transform generation, structural drift and drift refusal. [Dated native completion evidence](evidence/native-gemini-2026-11-17.json) preserves both session hashes and the checked source-file hashes. The website and its downloadable archive still contain the earlier capture receipt; their evidence refresh is awaiting Linux release qualification and deployment.
 
 ## Supported scope
 

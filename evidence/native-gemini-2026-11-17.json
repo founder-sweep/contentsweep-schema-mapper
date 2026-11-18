@@ -1,0 +1,57 @@
+{
+  "product": "schema_mapper",
+  "status": "passed",
+  "reason": null,
+  "client": "Gemini CLI",
+  "client_version": "0.68.0",
+  "models_observed": [
+    "gemini-3.5-flash-lite"
+  ],
+  "synthetic": true,
+  "internal_noncash": true,
+  "customer_outcome": false,
+  "capture_kind": "Native interrupted workflow resumed to verified completion",
+  "initial_capture_date": "2026-11-13",
+  "completion_client_date": "2026-11-17",
+  "assertions": [
+    "unapproved transformation refused",
+    "exact fingerprint approval",
+    "initial identifier and decimal preserved",
+    "compatible reuse with Ada Updated",
+    "matching-runtime transformation generated",
+    "structural drift incompatible",
+    "drift transformation refused"
+  ],
+  "native_mcp_tool_counts": {
+    "infer_schema": 1,
+    "map_to_schema": 1,
+    "review_mapping": 2,
+    "transform_file": 7,
+    "resolve_mapping": 1,
+    "approve_mapping": 1,
+    "validate_schema_mapping": 2,
+    "generate_transformation": 3,
+    "check_schema_drift": 2
+  },
+  "logs_sha256": {
+    "gemini-schema_mapper-native.jsonl": "2ccfbc22265602b5df49593edb5fadb9c17d42d398c02bce49ab97396943f2fd",
+    "gemini-mapper-resume.jsonl": "5cd4fdb5deeedeef37d399bed51cfff632cae4f1e4b1b40681210423755de35f"
+  },
+  "approval_fingerprint": "sha256:4d0951375b563978fd9e995e4cf6e934d585c5c72969ac5ca6689da813310c1e",
+  "hosted_product_credentials_supplied_to_continuation": false,
+  "model_access": "Existing owner-approved free Gemini API project; no billing added",
+  "transport_note": "Real native MCP calls in both sessions; deterministic runner output was not substituted.",
+  "reproduction_source_commit": "794f9009953ca1d814465e26ac63c894fa44a0af",
+  "public_artifact_note": "Dated native completion receipt. The website demo archive retains its November 13 evidence until the separate website release is qualified and deployed.",
+  "unchanged_demo_files_sha256": {
+    "demo/fixtures/decisions.json": "34d43c3d634e1692fc2b9732ccad1db968d15b94908ce589691aaad910539497",
+    "demo/fixtures/expected.jsonl": "b9996185551e9c5bac1db1b9f514177b47f2ea62672c41bbf72d2ba69ff7cd2c",
+    "demo/fixtures/customer.schema.json": "a8a0cfacc7fb81694e1a8626c42fd236e2c6d969acf1ca94b253826cf90b3ae4",
+    "demo/fixtures/vendor.csv": "2c0f12f6355cd033f374bebb65c7c4c3666d31dfaa19c4f90a13a99b920d4df6",
+    "demo/fixtures/drift.csv": "93ae254d149d30c8ae9b9d1425ee2126893d32dfbb33beaf28378b6c8aa0562a",
+    "demo/fixtures/later.csv": "01fca02c0b725b514cda94887544937b42635bea8bda64900bf0a9714307d659",
+    "demo/recorded/transformed.json": "eb17cd66c57fd9a90b13749661368e7ba8a3a1744f65a4fd81a68ad5ee5b4e22",
+    "demo/recorded/transform.py": "c6303e7fa3c87c4a32267b441b1a94883c3b1659439daf9cdabfce9aa666fed1",
+    "demo/run.py": "2376130d1534c3a3122eac183c1e01ec9da050de9ac6045b9d4c790bde572aae"
+  }
+}
