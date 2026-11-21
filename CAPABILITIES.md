@@ -10,7 +10,7 @@ The local MCP demo stops unresolved approval, preserves identifier 000401 and de
 
 The recorded results use owned synthetic fixtures and real product MCP calls. All six primary workflows and both DAG/Deployment local alternatives passed again from fresh public-source checkouts. This proves the documented scenarios and deliberate stop cases. It is not a claim of arbitrary input support, security certification, universal client completion or independent customer adoption.
 
-Native Gemini capture for this exact demo: **passed**. The actual review, exact-fingerprint approval and initial-transform session from November 13 was resumed to verified completion on November 17. Native MCP calls verified compatible reuse, matching-runtime transform generation, structural drift and drift refusal. [Dated native completion evidence](evidence/native-gemini-2026-11-17.json) preserves both session hashes and the checked source-file hashes. The website and its downloadable archive still contain the earlier capture receipt; their evidence refresh is awaiting Linux release qualification and deployment.
+Native Gemini capture for this exact demo: **passed**. The actual review, exact-fingerprint approval and initial-transform session from November 13 was resumed to verified completion on November 17. Native MCP calls verified compatible reuse, matching-runtime transform generation, structural drift and drift refusal. [Dated native completion evidence](evidence/native-gemini-2026-11-17.json) preserves both session hashes and the checked source-file hashes. The website evidence refresh went live on November 20, 2026. The [current website demo ZIP](https://schema.contentsweep.ai/demos/vendor-mapping/demo.zip) contains the completed receipt and has SHA256 `906ed28b19b2edaf3d9956e84192342220cfc01b8e9cfb4395f802225ac33034`.
 
 ## Supported scope
 
@@ -22,4 +22,4 @@ Local CLI/SDK/MCP and hosted preview/validation are free. Optional hosted approv
 
 The runner requires explicit hosted authorization and private credentials. It preserves uncertain request identities, verifies consumption, and performs no purchase.
 
-Demo ZIP SHA256: `139edcd1e54346a9134008eff16318980f34479f5d0901f6792e4a2f992375f0`. Verification recorded November 13, 2026.
+November 13 demo ZIP SHA256: `139edcd1e54346a9134008eff16318980f34479f5d0901f6792e4a2f992375f0`. Verification recorded November 13, 2026.

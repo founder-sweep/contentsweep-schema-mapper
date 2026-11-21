@@ -17,6 +17,12 @@ Proven reviewed vendor mapping with exact identifiers and decimals, reusable tra
 
 Follow the existing runtime setup in the README. Use a dedicated Python 3.12+ environment. Set `CONTENTSWEEP_SCHEMA_MAPPER_MCP_COMMAND` to the absolute path of its installed `schema-map-mcp` executable. Launch from a trusted workspace; the working directory is not a filesystem sandbox. Do not install or execute dependencies from the project being assessed.
 
+## Install the local MCP bundle
+
+The [official MCP Registry record](https://registry.modelcontextprotocol.io/v0.1/servers/ai.contentsweep%2Fschema-mapper/versions/1.0.0) points to the local stdio server. In an MCPB-compatible client, [download the 1.0.0 MCP bundle](https://github.com/founder-sweep/contentsweep-schema-mapper/releases/download/mcpb-v1.0.0/contentsweep-schema-mapper-1.0.0.mcpb) and open it using the client’s bundle installer. Install Python 3.12 and make `python3.12` available on PATH. The supported platforms are Apple Silicon macOS and x86-64 Linux.
+
+Bundle SHA256: `657eab0669704c7b34e5082366723b8d1d4c2f8d6c4acd623f5e29c96fe90d7e`. The bundle includes runtime 2.0.0b2.
+
 ## Gemini CLI
 
 Install the extension from this repository:

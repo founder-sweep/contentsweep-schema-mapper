@@ -12,9 +12,9 @@ The local MCP demo stops unresolved approval, preserves identifier 000401 and de
 
 
 <!-- agent-current-status:start -->
-## Current status — November 1, 2026
+## Current status — November 20, 2026
 
-Current free runtime download: 2.0.0b2, Python 3.12+. Local CLI/SDK/stdio MCP need no hosted key. Optional hosted preview and validation are free; one approved artifact download is $9 once. Generated wrappers require the matching runtime. No subscription, PyPI or MCP Registry listing is claimed.
+Current free runtime download: 2.0.0b2, Python 3.12+. Local CLI/SDK/stdio MCP need no hosted key. Optional hosted preview and validation are free; one approved artifact download is $9 once. Generated wrappers require the matching runtime. The hosted download is a one-time purchase. The local stdio server is available in the [official MCP Registry record](https://registry.modelcontextprotocol.io/v0.1/servers/ai.contentsweep%2Fschema-mapper/versions/1.0.0). For an MCPB-compatible client, [download the 1.0.0 MCP bundle](https://github.com/founder-sweep/contentsweep-schema-mapper/releases/download/mcpb-v1.0.0/contentsweep-schema-mapper-1.0.0.mcpb). The bundle contains Schema Mapper 2.0.0b2 and requires Python 3.12 on Apple Silicon macOS or x86-64 Linux.
 
 [Agent setup](https://schema.contentsweep.ai/integrate) · [Product skill](https://schema.contentsweep.ai/SKILL.md) · [Task-to-tool reference](https://schema.contentsweep.ai/agent-assets/TOOL_REFERENCE.md). Skills support Codex and Claude Code and grant no upload, business-meaning approval, spending or destination-write permission. Historical test notes below retain their original scope; synthetic/internal qualification is not paid adoption.
 <!-- agent-current-status:end -->
